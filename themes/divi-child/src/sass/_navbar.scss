@@ -1,0 +1,29 @@
+// Mobile
+
+// Desktop
+@media only screen and (min-width: 981px) {
+  #et-top-navigation {
+    padding: 30px 0!important;
+  }
+  #top-menu-nav{
+    ul {
+      li {
+        padding: 0;
+        margin-left: 15px;
+        border: 2px solid transparent;
+        &.current-menu-item,
+        &:hover {
+          border: 2px solid $blue;
+        }
+        a {
+          font-family: $lato;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 18px 15px!important;
+          line-height: 13.25px;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
