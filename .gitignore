@@ -1,0 +1,4 @@
+.DS_Store
+wp-content/themes/divi-child/node_modules/
+cache/*
+upgrade/*
