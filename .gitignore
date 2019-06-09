@@ -1,5 +1,6 @@
 .DS_Store
 wp-content/themes/divi-child/node_modules/
+wp-content/themes/divi-child/package-lock.json
 cache/*
 upgrade/*
 themes/twentynineteen/package-lock.json
