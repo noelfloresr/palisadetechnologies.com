@@ -2,3 +2,4 @@
 wp-content/themes/divi-child/node_modules/
 cache/*
 upgrade/*
+themes/twentynineteen/package-lock.json
