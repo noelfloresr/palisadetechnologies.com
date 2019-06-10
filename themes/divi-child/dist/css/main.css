@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,700i,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Teko:400,700&display=swap");
+@media only screen and (max-width: 980px) {
+  .page-container {
+    margin: 0;
+    padding: 0; }
+  header .container {
+    width: 100%; }
+    header .container .logo_container {
+      padding-left: 5%; }
+    header .container #et-top-navigation {
+      padding-left: 0;
+      padding-right: 5%; }
+  .mobile_menu_bar:before {
+    color: #363636;
+    font-size: 40px; } }
+
 @media only screen and (min-width: 981px) {
   #main-header #et-top-navigation {
     padding: 30px 0 !important; }
@@ -27,7 +42,12 @@
   box-sizing: border-box; }
 
 p {
-  color: #6a737f; }
+  color: #6a737f;
+  font-family: "Lato", sans-serif; }
+
+a {
+  color: #131f30;
+  font-family: "Lato", sans-serif; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Teko", sans-serif !important; }
@@ -46,6 +66,16 @@ h3 {
 .subtitle-white h2 {
   color: white;
   font-size: 5vh !important; }
+
+.blue-button {
+  background-color: #015f95;
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 900; }
 
 .hero-title {
   text-align: center; }
@@ -71,3 +101,8 @@ h3 {
     align-items: center; }
     .custom-post-type-list .content .contract-image {
       margin-right: 15px; }
+
+.view-all-link {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 15px; }

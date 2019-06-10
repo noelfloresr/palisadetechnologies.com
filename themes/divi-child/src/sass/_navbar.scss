@@ -1,5 +1,29 @@
 // Mobile
 
+@media only screen and (max-width: 980px) {
+  .page-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    .container {
+      width: 100%;
+      .logo_container {
+        padding-left: 5%;
+      }
+      #et-top-navigation {
+        padding-left: 0;
+        padding-right: 5%;
+      }
+    }
+  }
+
+  .mobile_menu_bar:before {
+    color: #363636;
+    font-size: 40px;
+  }
+}
 // Desktop
 @media only screen and (min-width: 981px) {
   #main-header {

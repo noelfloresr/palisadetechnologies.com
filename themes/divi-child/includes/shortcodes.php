@@ -38,8 +38,10 @@
             $html .= "<div class='content'>";
               $html .= "<div class='excerpt'> <p>" . get_the_excerpt() . "</p></div>";
             $html .= "</div>";
+            $html .= "<a class='blue-button' href=" . get_permalink() . "> View & Apply </a>";
           $html .= "</div>";
          endwhile;
+         $html .= "<a href='/careers' class='view-all-link'>VIEW ALL OPENINGS </a> <i class='fas fa-arrow-right'></i>";
        wp_reset_postdata();
    endif;
       return $html;

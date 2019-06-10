@@ -8,13 +8,15 @@
   .content{
     display: flex;
     align-items: center;
-    .excerpt {
-      p {
-        
-      }
-    }
     .contract-image {
       margin-right: 15px;
     }
   }
+  
+}
+
+.view-all-link{
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 15px;
 }

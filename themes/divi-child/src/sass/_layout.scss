@@ -4,6 +4,12 @@
 
 p {
   color: $font-color;
+  font-family: $lato;
+}
+
+a {
+  color: $link-color;
+  font-family: $lato;
 }
 
 h1, h2, h3, h4, h5 {
@@ -31,4 +37,15 @@ h3 {
     color: white;
     font-size: 5vh!important;
   }
+}
+
+.blue-button {
+  background-color: $blue;
+  color: white;
+  font-family: $lato;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 900;
 }
