@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,700i,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Teko:400,700&display=swap");
 @media only screen and (min-width: 981px) {
-  #et-top-navigation {
+  #main-header #et-top-navigation {
     padding: 30px 0 !important; }
+  #main-header.et-fixed-header #et-top-navigation {
+    padding: 10px 0 !important; }
   #top-menu-nav ul li {
     padding: 0;
-    margin-left: 15px;
+    margin: 0 20px !important;
     border: 2px solid transparent; }
     #top-menu-nav ul li.current-menu-item, #top-menu-nav ul li:hover {
       border: 2px solid #015f95; }
@@ -13,16 +15,41 @@
       font-family: "Lato", sans-serif;
       font-weight: bold;
       text-transform: uppercase;
-      padding: 18px 15px !important;
+      padding: 15px !important;
       line-height: 13.25px;
       color: #015f95; } }
+
+.white-button {
+  width: 235px;
+  height: 60px; }
 
 * {
   box-sizing: border-box; }
 
+p {
+  color: #6a737f; }
+
 h1, h2 {
   font-family: "Teko", sans-serif; }
 
-h2 {
-  font-size: 20px;
-  color: #172436; }
+.subtitle-blue h2 {
+  color: #172436;
+  font-size: 5vh !important; }
+
+.subtitle-white h2 {
+  color: white;
+  font-size: 5vh !important; }
+
+.hero-title {
+  text-align: center; }
+  .hero-title h1 {
+    font-size: 9vh;
+    color: white;
+    text-align: center; }
+
+.hero-subtitle {
+  color: #dbdada;
+  font-size: 3vh;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  letter-spacing: 2px; }

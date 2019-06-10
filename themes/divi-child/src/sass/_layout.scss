@@ -2,11 +2,24 @@
   box-sizing: border-box;
 }
 
+p {
+  color: $font-color;
+}
+
 h1, h2 {
   font-family: $teko;
 }
 
-h2{
-  font-size: 20px;
-  color: $font-title-color;
+.subtitle-blue {
+  h2 {
+    color: $font-title-color;
+    font-size: 5vh!important;
+  }
+}
+
+.subtitle-white {
+  h2 {
+    color: white;
+    font-size: 5vh!important;
+  }
 }
