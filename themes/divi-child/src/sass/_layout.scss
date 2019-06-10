@@ -6,8 +6,17 @@ p {
   color: $font-color;
 }
 
-h1, h2 {
-  font-family: $teko;
+h1, h2, h3, h4, h5 {
+  font-family: $teko!important;
+}
+
+h1 {
+  font-size: 9vh;
+}
+
+h3 {
+  font-size: 3vh!important;
+  color: $font-color;
 }
 
 .subtitle-blue {

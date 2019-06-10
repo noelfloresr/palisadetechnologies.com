@@ -1,0 +1,15 @@
+
+.custom-post-type-list {
+  margin-bottom: 30px;
+  .date {
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  .content{
+    display: flex;
+    align-items: center;
+    .contract-image {
+      margin-right: 15px;
+    }
+  }
+}

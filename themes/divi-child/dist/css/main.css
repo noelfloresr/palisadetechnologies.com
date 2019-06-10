@@ -29,8 +29,15 @@
 p {
   color: #6a737f; }
 
-h1, h2 {
-  font-family: "Teko", sans-serif; }
+h1, h2, h3, h4, h5 {
+  font-family: "Teko", sans-serif !important; }
+
+h1 {
+  font-size: 9vh; }
+
+h3 {
+  font-size: 3vh !important;
+  color: #6a737f; }
 
 .subtitle-blue h2 {
   color: #172436;
@@ -53,3 +60,14 @@ h1, h2 {
   font-family: "Lato", sans-serif;
   font-style: italic;
   letter-spacing: 2px; }
+
+.custom-post-type-list {
+  margin-bottom: 30px; }
+  .custom-post-type-list .date {
+    font-style: italic;
+    margin-bottom: 15px; }
+  .custom-post-type-list .content {
+    display: flex;
+    align-items: center; }
+    .custom-post-type-list .content .contract-image {
+      margin-right: 15px; }
