@@ -7,3 +7,8 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 include get_stylesheet_directory() . '/includes/post_types.php'; // Post types
 include get_stylesheet_directory() . '/includes/shortcodes.php'; // Post types
+
+function custom_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

@@ -23,7 +23,31 @@
    endif;
       return $html;
   }
-  function register_shortcodes(){
-     add_shortcode('ContractList', 'recent_contracts_function');
+
+  // Careers Shortcode
+  function recent_careers_function() {
+    global $post;
+      $html = "";
+      $my_query = new WP_Query( array(
+           'post_type' => 'careers',
+           'posts_per_page' => 3
+      ));
+      if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post();
+          $html .= "<div class='custom-post-type-list'>";
+            $html .= "<h3 class='title'>" . get_the_title() . " </h3>";
+            $html .= "<div class='content'>";
+              $html .= "<div class='excerpt'> <p>" . get_the_excerpt() . "</p></div>";
+            $html .= "</div>";
+          $html .= "</div>";
+         endwhile;
+       wp_reset_postdata();
+   endif;
+      return $html;
   }
+  function register_shortcodes(){
+    add_shortcode('ContractList', 'recent_contracts_function');
+    add_shortcode('CareersList', 'recent_careers_function');
+  }
+
+
   add_action( 'init', 'register_shortcodes');
