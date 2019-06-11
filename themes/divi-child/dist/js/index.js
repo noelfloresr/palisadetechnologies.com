@@ -1,0 +1,1 @@
+jQuery(document).ready(function(o){var e=jQuery("#et_mobile_nav_menu");console.log(e),e.click(function(o){console.log(o)})});
