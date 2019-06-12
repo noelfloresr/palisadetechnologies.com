@@ -106,3 +106,32 @@ h3 {
   font-weight: bold;
   display: inline-block;
   margin-right: 15px; }
+
+#main-footer {
+  background-color: #131f30 !important; }
+
+#footer-widgets {
+  padding: 100px 0; }
+  #footer-widgets .footer-widget {
+    width: 100%;
+    margin-bottom: 0; }
+    #footer-widgets .footer-widget:nth-child(1) {
+      text-align: center; }
+    #footer-widgets .footer-widget:nth-child(2) {
+      display: flex;
+      justify-content: space-between; }
+    #footer-widgets .footer-widget .fwidget {
+      margin-bottom: 0; }
+    #footer-widgets .footer-widget #media_image-2 {
+      margin-bottom: 115px !important; }
+  #footer-widgets .textwidget p {
+    font-size: 18px !important; }
+  #footer-widgets #text-4 {
+    float: right; }
+
+#footer-bottom {
+  display: none; }
+
+#media_image-2 {
+  width: 100%;
+  margin: auto; }

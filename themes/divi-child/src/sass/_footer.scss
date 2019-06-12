@@ -1,0 +1,44 @@
+
+// Footer
+#main-footer {
+  background-color: $link-color!important;
+}
+
+#footer-widgets {
+  padding: 100px 0;
+  .footer-widget {
+    width: 100%;
+    margin-bottom: 0;
+    &:nth-child(1) {
+      text-align: center;
+    }
+    &:nth-child(2) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .fwidget {
+      margin-bottom: 0;
+    }
+    #media_image-2 {
+      margin-bottom: 115px!important;
+    }
+  }
+  .textwidget {
+    p {
+      font-size: 18px!important;
+    }
+  }
+  
+  #text-4{
+    float: right;
+  }
+}
+
+#footer-bottom {
+  display: none;
+}
+
+#media_image-2 {
+  width: 100%;
+  margin: auto;
+}
