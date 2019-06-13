@@ -1,7 +1,4 @@
 <?php
-
-
-  // Shortcodes
   function recent_contracts_function() {
     global $post;
       $html = "";
@@ -50,6 +47,5 @@
     add_shortcode('ContractList', 'recent_contracts_function');
     add_shortcode('CareersList', 'recent_careers_function');
   }
-
-
   add_action( 'init', 'register_shortcodes');
+?>

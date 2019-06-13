@@ -9,7 +9,7 @@ function child_theme_assets() {
 add_action( 'wp_enqueue_scripts', 'child_theme_assets' );
 
 include get_stylesheet_directory() . '/includes/post_types.php'; // Post types
-include get_stylesheet_directory() . '/includes/shortcodes.php'; // Post types
+include get_stylesheet_directory() . '/includes/shortcodes.php'; // Shortcode
 
 function custom_excerpt_length( $length ) {
 	return 25;
