@@ -11,6 +11,12 @@
     header .container #et-top-navigation {
       padding-left: 0;
       padding-right: 5%; }
+  header .et_menu_container.opened {
+    background-color: #2a3544; }
+    header .et_menu_container.opened .mobile_menu_bar::before {
+      color: white; }
+  header #mobile_menu {
+    background-color: rgba(1, 95, 149, 0.5) !important; }
   .mobile_menu_bar:before {
     color: #363636;
     font-size: 40px; } }
