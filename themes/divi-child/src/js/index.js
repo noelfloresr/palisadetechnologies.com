@@ -5,8 +5,10 @@ jQuery(document).ready(function($){
     console.log(mobile_nav.hasClass("opened"));
     if (mobile_nav.hasClass("opened")) {
       $('.et_menu_container').removeClass('opened');
+      $('#logo').attr('src', '/wp-content/uploads/logo.png')
     } else {
       $('.et_menu_container').addClass('opened');
+      $('#logo').attr('src', '/wp-content/uploads/logo-hover.png')
     }
     
  });
