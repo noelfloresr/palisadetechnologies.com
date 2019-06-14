@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0; }
   header .container {
-    width: 100%;
-    margin-top: 2px; }
+    width: 100%; }
     header .container .logo_container {
       padding-left: 5%; }
     header .container #et-top-navigation {
@@ -137,6 +136,13 @@ h3 {
   font-weight: bold;
   display: inline-block;
   margin-right: 15px; }
+
+.archive .container::before {
+  display: none; }
+
+.archive .container #left-area {
+  width: 100%;
+  padding-right: 0; }
 
 #main-footer {
   background-color: #131f30 !important; }
