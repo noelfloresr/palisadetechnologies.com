@@ -9,6 +9,7 @@
   header {
     .container {
       width: 100%;
+      margin-top: 2px;
       .logo_container {
         padding-left: 5%;
       }
@@ -17,10 +18,43 @@
         padding-right: 5%;
       }
     }
-    .et_menu_container.opened {
-      background-color: #2a3544;
-      .mobile_menu_bar::before {
-        color: white;
+    .et_menu_container {
+      &.opened {
+        background-color: #2a3544;
+        .mobile_menu_bar::before {
+          color: white;
+        }
+        li {
+          a {
+            &:before{
+              content: '';
+              width: 91px;
+              height: 96px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+        #menu-item-28 {
+          a {
+            &:before {
+              background: url('/wp-content/uploads/info.png') no-repeat;
+            }
+          }
+        }
+        #menu-item-33 {
+          a {
+            &:before {
+              background: url('/wp-content/uploads/briefcase.png') no-repeat;
+            }
+          }
+        }
+        #menu-item-36 {
+          a {
+            &:before {
+              background: url('/wp-content/uploads/phone-book.png') no-repeat;
+            }
+          }
+        }
       }
     }
     #mobile_menu{
@@ -28,18 +62,29 @@
       border: none;
       li {
         text-align: center;
+        margin-bottom: 40px;
         a {
           color: white;
+          font-size: 18px;
+          text-transform: uppercase;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            margin-bottom: 15px;
+          }
         }
       }
     }
   }
+
 
   .mobile_menu_bar:before {
     color: #363636;
     font-size: 40px;
   }
 }
+
 // Desktop
 @media only screen and (min-width: 981px) {
   #main-header {
