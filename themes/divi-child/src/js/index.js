@@ -15,19 +15,46 @@ jQuery(document).ready(function($){
     }
  });
 
-    // var infoSelector = $('ul#mobile_menu > #menu-item-28 > a');
-    // var careerSelector = $('ul#mobile_menu #menu-item-33 > a');
-    // var contactSelector = $('ul#mobile_menu #menu-item-36 > a');
-    // console.log(infoSelector);
+ var benefitsColumn = $('.benefits-column');
+ var professionalDevelopmentColumn = $('.professional-development-column');
+ var internshipColumn = $('.internship-column');
 
-    // var infoHtml = infoSelector.html();
-    // var careerHtml = careerSelector.html();
-    // var contactHtml = contactSelector.html();
+ var benefitsRow = $('.benefits-row');
+ var professionalDevelopmentRow = $('.professional-development-row');
+ var internshipRow = $('.internship-row');
 
-    // // Adding Menu Icons
-    //   infoSelector.html('<img src="/wp-content/uploads/info.png" class="iconMenu" />' + infoHtml);        
-    //   careerSelector.html('<img src="/wp-content/uploads/briefcase.png" class="iconMenu" />' + careerHtml); 
-    //   contactSelector.html('<img src="/wp-content/uploads/phone-book.png" class="iconMenu" />' + contactHtml);
-    
+professionalDevelopmentRow.hide();
+internshipRow.hide();
+
+benefitsColumn.hover(function () { 
+  benefitsRow.show();
+  professionalDevelopmentRow.hide();
+  internshipRow.hide();
+
+  benefitsColumn.addClass('active');
+  professionalDevelopmentColumn.removeClass('active');
+  internshipColumn.removeClass('active');
+});
+
+professionalDevelopmentColumn.hover(function () { 
+  benefitsRow.hide();
+  professionalDevelopmentRow.show();
+  internshipRow.hide();
+
+  benefitsColumn.removeClass('active');
+  professionalDevelopmentColumn.addClass('active');
+  internshipColumn.removeClass('active');
+});
+
+internshipColumn.hover(function () { 
+  benefitsRow.hide();
+  professionalDevelopmentRow.hide();
+  internshipRow.show();
+
+  benefitsColumn.removeClass('active');
+  professionalDevelopmentColumn.removeClass('active');
+  internshipColumn.addClass('active');
+});
+
 
 });
