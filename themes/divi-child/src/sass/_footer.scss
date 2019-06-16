@@ -22,6 +22,33 @@
     #media_image-2 {
       margin-bottom: 115px!important;
     }
+    @media(max-width: 980px) {
+      display: flex;
+      flex-direction: column;
+      div {
+        margin-bottom: 30px;
+      }
+    }
+    @media (max-width: 767px) {
+      &:nth-child(n) {
+        margin-bottom: 0!important;
+      }
+      .fwidget {
+        margin-bottom: 30px!important;
+        div {
+          margin-bottom: 0;
+          p {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+            i {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
   }
   .textwidget {
     p {

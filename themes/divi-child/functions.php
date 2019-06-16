@@ -12,6 +12,6 @@ include get_stylesheet_directory() . '/includes/post_types.php'; // Post types
 include get_stylesheet_directory() . '/includes/shortcodes.php'; // Shortcode
 
 function custom_excerpt_length( $length ) {
-	return 25;
+	return 30;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

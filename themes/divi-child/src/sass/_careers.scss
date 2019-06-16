@@ -1,0 +1,202 @@
+
+
+
+
+
+#careers-page {
+  background-color: #f4f4f4;
+  .hero-section {
+    background: url('/wp-content/uploads/hero-careers.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    // height: 936px;
+    height: 700px;
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .slogan {
+        width: 60%;
+        padding-right: 11%;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 30px;
+      }
+      @media(max-width: 767px) {
+        flex-direction: column;
+        .slogan {
+          width: 100%;
+          padding-right: 0;
+          text-align: center;
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+  .career-item-section {
+    padding: 0;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0!important;
+    }
+    .et_pb_row{
+      padding-top: 0;
+    }
+    .career-item {
+      display: flex!important;
+      .date{
+        margin-right: 11%;
+        width: 400px;
+        height: 210px;
+        background: url('../images/career-date-background.jpg') no-repeat;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-bottom: 15px;
+      }
+      .content {
+        padding: 50px 0;
+        h2 {
+          padding: 0;
+          margin-bottom: 30px;
+          font-size: 26px;
+          font-weight: 700;
+          letter-spacing: 1px;
+        }
+        .excerpt {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    @media(max-width: 767px) {
+      margin: 30px;
+      box-shadow: 0 0 20px #e1e1e1;
+      &:first-child {
+        margin-top: 100px;
+      }
+      .career-item {
+        flex-direction: column;
+        
+        .date {
+          width: 226px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .entry-content {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.apply-now-link {
+  text-transform: uppercase;
+  color: #015f95;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.career-benefits-section {
+  background: none;
+  box-shadow: inset 0 0 40px #e1e1e1!important;
+  padding: 150px 0!important;
+  .et_pb_column_1_3 {
+    background-color: white;
+    height: 340px;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    .et_pb_module{
+      img {
+        margin-bottom: 30px;
+      }
+      h3 {
+        font-size: 25px!important;
+        text-transform: uppercase;
+        color: #025f95;
+        &::before {
+          content: '';
+          height: 49px;
+          display: block;
+          margin: auto;
+          margin-bottom: 30px;
+          
+        }
+      }
+      
+    }
+    &:hover{
+      box-shadow: 0 0 20px #e1e1e1;
+      h3 {
+        color: #289cdf;
+      }
+    }
+    &:nth-child(1) {
+      .et_pb_module{
+        h3 {          
+          background: url("../images/safe-transaction.png") no-repeat;
+          background-position: top center!important;
+        }
+      }
+      &:hover {
+        .et_pb_module{
+          h3 {          
+            background: url("../images/safe-transaction-hover.png") no-repeat;
+            background-position: top center!important;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      .et_pb_module{
+        h3 {          
+          background: url("../images/diploma.png") no-repeat;
+          background-position: top center!important;
+        }
+      }
+      &:hover{
+        .et_pb_module{
+          h3 {          
+            background: url("../images/diploma-hover.png") no-repeat;
+            background-position: top center!important;
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      .et_pb_module{
+        h3 {          
+          background: url("../images/mortarboard.png") no-repeat;
+          background-position: top center!important;
+        }
+      }
+      &:hover {
+        .et_pb_module{
+          h3 {          
+            background: url("../images/mortarboard-hover.png") no-repeat;
+            background-position: top center!important;
+          }
+        }
+      }
+    }
+  }
+  .benefits {
+    margin-top: 50px;
+    ul {
+      li {
+        list-style-type: square;
+        font-style: italic;
+        font-family: $lato;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

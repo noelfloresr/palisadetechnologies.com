@@ -12,7 +12,7 @@
             $html .= "<div class='date'>" . get_field('date_of_contract') . " </div>";
             $html .= "<div class='content'>";
               $html .= "<div class='contract-image'>" .get_the_post_thumbnail() . "</div>";
-              $html .= "<div class='contract-description'>" .get_field('brief_description') . "</div>";
+              $html .= "<div class='contract-description'> <p>" . get_field('brief_description') . "</p> </div>";
             $html .= "</div>";
           $html .= "</div>";
          endwhile;
@@ -33,7 +33,7 @@
           $html .= "<div class='custom-post-type-list'>";
             $html .= "<h3 class='title'>" . get_the_title() . " </h3>";
             $html .= "<div class='content'>";
-              $html .= "<div class='excerpt'> <p>" . get_the_excerpt() . "</p></div>";
+              $html .= "<div class='excerpt'><p>" . get_the_excerpt() . "</p></div>";
             $html .= "</div>";
             $html .= "<a class='blue-button' href=" . get_permalink() . "> View & Apply </a>";
           $html .= "</div>";
