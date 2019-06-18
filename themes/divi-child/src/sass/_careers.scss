@@ -1,8 +1,5 @@
 
 
-
-
-
 #careers-page {
   background-color: #f4f4f4;
   .hero-section {
@@ -15,6 +12,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .title {
+        h1 {
+          font-weight: 600!important;
+          font-size: 8vh!important;
+        }
+      }
       .slogan {
         width: 60%;
         padding-right: 11%;
@@ -45,10 +48,10 @@
     }
     .career-item {
       display: flex!important;
+      justify-content: space-between;
       .date{
-        margin-right: 11%;
-        width: 400px;
-        height: 210px;
+        width: 18%;
+        height: 180px;
         background: url('../images/career-date-background.jpg') no-repeat;
         color: white;
         display: flex;
@@ -57,15 +60,20 @@
         text-transform: uppercase;
         font-weight: 600;
         padding-bottom: 15px;
+        span {
+          color: #4dbdfd;
+        }
       }
       .content {
         padding: 50px 0;
+        width: 70%;
         h2 {
           padding: 0;
           margin-bottom: 30px;
           font-size: 26px;
-          font-weight: 700;
-          letter-spacing: 1px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          overflow-wrap: break-word;
         }
         .excerpt {
           margin-bottom: 30px;
@@ -80,10 +88,13 @@
       }
       .career-item {
         flex-direction: column;
-        
         .date {
-          width: 226px;
+          width: 100%;
+          max-width: 226px;
           margin-right: 0;
+        }
+        .content {
+          width: 100%;
         }
       }
     }
@@ -100,6 +111,14 @@
   color: #015f95;
   font-weight: 900;
   letter-spacing: 1px;
+  i {
+    display: none;
+  }
+  &:hover {
+    i {
+      display: inline-block;
+    }
+  }
 }
 
 .career-benefits-section {
@@ -109,7 +128,7 @@
   min-height: 900px;
   .et_pb_column_1_3 {
     background-color: white;
-    height: 340px;
+    height: 250px;
     display: flex!important;
     align-items: center;
     justify-content: center;
@@ -120,9 +139,12 @@
         margin-bottom: 30px;
       }
       h3 {
-        font-size: 25px!important;
+        font-size: 20px!important;
         text-transform: uppercase;
         color: #025f95;
+        font-family: $lato!important;
+        font-weight: 600;
+        text-align: center;
         &::before {
           content: '';
           height: 49px;
@@ -218,12 +240,21 @@
       }
     }
   }
+  .et_pb_column_1_1 {
+    width: 100%;
+  }
   .professional-development,
   .internship {
     list-style-type: square;
     font-style: italic;
     font-family: $lato;
     letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    p {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 

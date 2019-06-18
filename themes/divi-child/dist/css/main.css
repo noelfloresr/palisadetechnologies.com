@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700i,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Teko:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,600,700,700i,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Teko:400,600,700&display=swap");
 @media only screen and (max-width: 980px) {
   .page-container {
     margin: 0;
@@ -47,13 +47,13 @@
 
 @media only screen and (min-width: 981px) {
   #main-header #et-top-navigation {
-    padding: 30px 0 !important; }
+    padding: 15px 0 !important; }
   #main-header.et-fixed-header #et-top-navigation {
     padding: 10px 0 !important; }
   #top-menu-nav ul li {
     padding: 0;
     margin: 0 20px !important;
-    border: 2px solid transparent; }
+    border: 1px solid transparent; }
     #top-menu-nav ul li.current-menu-item, #top-menu-nav ul li:hover {
       border: 2px solid #015f95; }
     #top-menu-nav ul li a {
@@ -161,6 +161,9 @@ h3 {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      #careers-page .hero-section .hero .title h1 {
+        font-weight: 600 !important;
+        font-size: 8vh !important; }
       #careers-page .hero-section .hero .slogan {
         width: 60%;
         padding-right: 11%;
@@ -184,11 +187,11 @@ h3 {
     #careers-page .career-item-section .et_pb_row {
       padding-top: 0; }
     #careers-page .career-item-section .career-item {
-      display: flex !important; }
+      display: flex !important;
+      justify-content: space-between; }
       #careers-page .career-item-section .career-item .date {
-        margin-right: 11%;
-        width: 400px;
-        height: 210px;
+        width: 18%;
+        height: 180px;
         background: url("../images/career-date-background.jpg") no-repeat;
         color: white;
         display: flex;
@@ -197,14 +200,18 @@ h3 {
         text-transform: uppercase;
         font-weight: 600;
         padding-bottom: 15px; }
+        #careers-page .career-item-section .career-item .date span {
+          color: #4dbdfd; }
       #careers-page .career-item-section .career-item .content {
-        padding: 50px 0; }
+        padding: 50px 0;
+        width: 70%; }
         #careers-page .career-item-section .career-item .content h2 {
           padding: 0;
           margin-bottom: 30px;
           font-size: 26px;
-          font-weight: 700;
-          letter-spacing: 1px; }
+          font-weight: 600;
+          letter-spacing: 2px;
+          overflow-wrap: break-word; }
         #careers-page .career-item-section .career-item .content .excerpt {
           margin-bottom: 30px; }
     @media (max-width: 767px) {
@@ -216,8 +223,11 @@ h3 {
         #careers-page .career-item-section .career-item {
           flex-direction: column; }
           #careers-page .career-item-section .career-item .date {
-            width: 226px;
-            margin-right: 0; } }
+            width: 100%;
+            max-width: 226px;
+            margin-right: 0; }
+          #careers-page .career-item-section .career-item .content {
+            width: 100%; } }
   #careers-page .entry-content:last-child {
     margin-bottom: 0; }
 
@@ -226,6 +236,10 @@ h3 {
   color: #015f95;
   font-weight: 900;
   letter-spacing: 1px; }
+  .apply-now-link i {
+    display: none; }
+  .apply-now-link:hover i {
+    display: inline-block; }
 
 .career-benefits-section {
   background: none;
@@ -234,7 +248,7 @@ h3 {
   min-height: 900px; }
   .career-benefits-section .et_pb_column_1_3 {
     background-color: white;
-    height: 340px;
+    height: 250px;
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -243,9 +257,12 @@ h3 {
     .career-benefits-section .et_pb_column_1_3 .et_pb_module img {
       margin-bottom: 30px; }
     .career-benefits-section .et_pb_column_1_3 .et_pb_module h3 {
-      font-size: 25px !important;
+      font-size: 20px !important;
       text-transform: uppercase;
-      color: #025f95; }
+      color: #025f95;
+      font-family: "Lato", sans-serif !important;
+      font-weight: 600;
+      text-align: center; }
       .career-benefits-section .et_pb_column_1_3 .et_pb_module h3::before {
         content: '';
         height: 49px;
@@ -294,12 +311,20 @@ h3 {
       font-style: italic;
       font-family: "Lato", sans-serif;
       letter-spacing: 1px; }
+  .career-benefits-section .et_pb_column_1_1 {
+    width: 100%; }
   .career-benefits-section .professional-development,
   .career-benefits-section .internship {
     list-style-type: square;
     font-style: italic;
     font-family: "Lato", sans-serif;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%; }
+    .career-benefits-section .professional-development p,
+    .career-benefits-section .internship p {
+      width: 100%;
+      text-align: center; }
 
 @media (max-width: 979px) {
   .career-benefits-section {
