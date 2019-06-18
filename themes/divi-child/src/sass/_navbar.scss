@@ -106,7 +106,7 @@
         border: 1px solid transparent;
         &.current-menu-item,
         &:hover {
-          border: 2px solid $blue;
+          border: 1px solid $blue;
         }
         a {
           font-family: $lato;

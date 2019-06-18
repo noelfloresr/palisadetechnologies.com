@@ -55,7 +55,7 @@
     margin: 0 20px !important;
     border: 1px solid transparent; }
     #top-menu-nav ul li.current-menu-item, #top-menu-nav ul li:hover {
-      border: 2px solid #015f95; }
+      border: 1px solid #015f95; }
     #top-menu-nav ul li a {
       font-family: "Lato", sans-serif;
       font-weight: bold;
@@ -333,6 +333,18 @@ h3 {
   .professional-development-row,
   .internship-row {
     display: none; } }
+
+.container::before {
+  display: none; }
+
+.container #content-area #left-area {
+  width: 100%;
+  padding-right: 0; }
+
+#single-career .hero-section {
+  background: url("/wp-content/uploads/single-career-hero.jpg");
+  width: 100%;
+  height: 968px; }
 
 #main-footer {
   background-color: #131f30 !important; }
