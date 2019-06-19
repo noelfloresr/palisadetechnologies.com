@@ -32,6 +32,23 @@
       if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post();
           $html .= "<div class='custom-post-type-list'>";
             $html .= "<h3 class='title'>" . get_the_title() . " </h3>";
+            $html .= "
+            <div class='social-icons'>
+              <ul>
+                <li><a href='#' target='_blank' rel='noopener noreferrer'></a>
+                  <img src='/wp-content/themes/divi-child/dist/images/facebook.png' alt=''>
+                </li>
+                <li><a href='#' target='_blank' rel='noopener noreferrer'>
+                  <img src='/wp-content/themes/divi-child/dist/images/twitter.png' alt=''>
+                </a></li>
+                <li><a href='#' target='_blank' rel='noopener noreferrer'>
+                  <img src='/wp-content/themes/divi-child/dist/images/google-plus.png' alt=''>
+                </a></li>
+                <li><a href='#' target='_blank' rel='noopener noreferrer'>
+                  <img src='/wp-content/themes/divi-child/dist/images/linkedin.png' alt=''>
+                </a></li>
+              </ul>
+            </div>";
             $html .= "<div class='content'>";
               $html .= "<div class='excerpt'><p>" . get_the_excerpt() . "</p></div>";
             $html .= "</div>";
