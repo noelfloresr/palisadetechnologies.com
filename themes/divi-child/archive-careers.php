@@ -42,7 +42,7 @@ get_header(); ?>
                       <span><?php echo get_field('career_date'); ?></span>
                     </div>
                     <div class="content">
-                      <h2><?php the_title(); ?></h2>
+                      <a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
                       <div class="excerpt"><?php the_excerpt(); ?></div>
                       <a href="<?php the_permalink() ?>" class="apply-now-link">Apply Now <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>

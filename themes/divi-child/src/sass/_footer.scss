@@ -22,6 +22,49 @@
     #media_image-2 {
       margin-bottom: 115px!important;
     }
+    p {
+      color: white;
+      text-transform: uppercase;
+      br {
+        display: none;
+      }
+    }
+    .fwidget {
+      
+      p {
+        position: relative;
+        &::before {
+          content: '';
+          width: 35px;
+          height: 35px;
+          display: inline-block;
+          position: absolute;
+          left: -50px;
+          bottom: -5px;
+        }
+      }
+    }
+    #text-2 {
+      p {
+        &::before {
+          background: url('/wp-content/themes/divi-child/dist/images/footer-mail-icon.png');
+        }
+      }
+    }
+    #text-3 {
+      p {
+        &::before {
+          background: url('/wp-content/themes/divi-child/dist/images/footer-phone-icon.png');
+        }
+      }
+    }
+    #text-4 {
+      p {
+        &::before {
+          background: url('/wp-content/themes/divi-child/dist/images/footer-location-icon.png');
+        }
+      }
+    }
     @media(max-width: 980px) {
       display: flex;
       flex-direction: column;
@@ -42,8 +85,10 @@
             flex-direction: column;
             color: white;
             text-align: center;
-            i {
-              margin-bottom: 15px;
+            margin-bottom: 40px;
+            &::before {
+              top: -45px;
+              left: calc(50% - 14px);
             }
           }
         }

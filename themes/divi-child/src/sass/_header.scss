@@ -10,10 +10,20 @@
   }
 }
 
-.hero-subtitle {
+h2.hero-subtitle {
   color: #dbdada;
   font-size: 3vh;
   font-family: $lato;
+  font-weight: bold;
   font-style: italic;
+  text-transform: capitalize;
   letter-spacing: 2px;
+}
+
+@media(max-width: 767px) {
+  .hero-title {
+    h1 {
+      font-size: 4vh;
+    }
+  }
 }

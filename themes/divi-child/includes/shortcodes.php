@@ -31,7 +31,7 @@
       ));
       if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post();
           $html .= "<div class='custom-post-type-list'>";
-            $html .= "<h3 class='title'>" . get_the_title() . " </h3>";
+            $html .= "<a href=" . get_permalink() . " target='_self'><h3 class='title'>" . get_the_title() . " </h3></a>";
             $html .= "
             <div class='social-icons'>
               <ul>
