@@ -37,18 +37,21 @@ get_header(); ?>
                     <div class="content">
                       <div class="social-icons">
                         <ul>
-                          <li><a href="#" target="_blank" rel="noopener noreferrer"></a>
-                            <img src="/wp-content/themes/divi-child/dist/images/facebook.png" alt="">
+                          <li>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink() ?>"  target='_blank' rel='noopener noreferrer'>
+                              <img src='/wp-content/themes/divi-child/dist/images/facebook.png' alt=''>
+                            </a>
                           </li>
-                          <li><a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="/wp-content/themes/divi-child/dist/images/twitter.png" alt="">
-                          </a></li>
-                          <li><a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="/wp-content/themes/divi-child/dist/images/google-plus.png" alt="">
-                          </a></li>
-                          <li><a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="/wp-content/themes/divi-child/dist/images/linkedin.png" alt="">
-                          </a></li>
+                          <li>
+                            <a href="https://twitter.com/share?u=<?php echo get_permalink() ?>" target="_blank" rel="noopener noreferrer">
+                              <img src="/wp-content/themes/divi-child/dist/images/twitter.png" alt="">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_permalink() ?>" target="_blank" rel="noopener noreferrer">
+                              <img src="/wp-content/themes/divi-child/dist/images/linkedin.png" alt="">
+                            </a>
+                          </li>
                         </ul>
                       </div>
                       <div class="job-description"><?php the_content(); ?></div>

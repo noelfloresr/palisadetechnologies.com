@@ -35,18 +35,21 @@
             $html .= "
             <div class='social-icons'>
               <ul>
-                <li><a href='#' target='_blank' rel='noopener noreferrer'></a>
-                  <img src='/wp-content/themes/divi-child/dist/images/facebook.png' alt=''>
+                <li>
+                  <a target='_blank' href='https://www.facebook.com/sharer/sharer.php?u=" . get_permalink() . "  rel='noopener noreferrer'>
+                    <img src='/wp-content/themes/divi-child/dist/images/facebook.png' alt=''>
+                  </a>
                 </li>
-                <li><a href='#' target='_blank' rel='noopener noreferrer'>
-                  <img src='/wp-content/themes/divi-child/dist/images/twitter.png' alt=''>
-                </a></li>
-                <li><a href='#' target='_blank' rel='noopener noreferrer'>
-                  <img src='/wp-content/themes/divi-child/dist/images/google-plus.png' alt=''>
-                </a></li>
-                <li><a href='#' target='_blank' rel='noopener noreferrer'>
-                  <img src='/wp-content/themes/divi-child/dist/images/linkedin.png' alt=''>
-                </a></li>
+                <li>
+                  <a target='_blank' href='https://twitter.com/share?u=" . get_permalink() . "  rel='noopener noreferrer'>
+                    <img src='/wp-content/themes/divi-child/dist/images/twitter.png' alt=''>
+                  </a>
+                </li>
+                <li>
+                  <a target='_blank' href='https://www.linkedin.com/shareArticle?mini=true&url=" . get_permalink() . " rel='noopener noreferrer'>
+                    <img src='/wp-content/themes/divi-child/dist/images/linkedin.png' alt=''>
+                  </a>
+                </li>
               </ul>
             </div>";
             $html .= "<div class='content'>";
