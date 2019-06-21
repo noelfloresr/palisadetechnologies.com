@@ -107,7 +107,6 @@
     .career-item-section { 
       .et_pb_row {
         margin-top: -800px;
-        padding: 15px;
         header {
           h1 {
             font-size: 3vh !important;
@@ -126,6 +125,14 @@
     }
   }
   @media(max-width: 980px) {
+    .announcement-section,
+    .career-item-section,
+    .policy-section {
+      .et_pb_row {
+        width: 90%;
+        padding: 30px;
+      }
+    }
     .career-item-section { 
       .et_pb_row {
         header {
@@ -143,6 +150,9 @@
           .job-description {
             width: 100%;
           }
+        }
+        .job-detail {
+          padding-bottom: 0;
         }
       }
     }

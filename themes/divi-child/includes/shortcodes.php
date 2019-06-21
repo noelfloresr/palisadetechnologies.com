@@ -58,7 +58,7 @@
             $html .= "<a class='blue-button' href=" . get_permalink() . "> View & Apply </a>";
           $html .= "</div>";
          endwhile;
-         $html .= "<a href='/careers' class='view-all-link'>VIEW ALL OPENINGS </a> <i class='fas fa-arrow-right'></i>";
+         $html .= "<a href='/careers' class='apply-now-link'>VIEW ALL OPENINGS  <i class='fas fa-arrow-right'></i></a>";
        wp_reset_postdata();
    endif;
       return $html;

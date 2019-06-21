@@ -61,3 +61,17 @@ h3 {
   margin-top: 20px;
   font-weight: 900;
 }
+
+#about-section-mobile {
+  .et_pb_row {
+    &:nth-child(2) {
+      display: flex;
+      .et_pb_column {
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
