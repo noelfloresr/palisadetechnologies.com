@@ -64,12 +64,11 @@ get_header(); ?>
                 <h3>Benefits</h3>
                 <div class="show-mobile">
                   <ul>
-                    <li>Paid dental, life, and long-term disability insurance</li>
-                    <li>Competitive BCBS health benefits available</li>
-                    <li>Immediate vesting in a 401(k) plan with historical company contributions of 20% of employee salary</li>
-                    <li>2 weeks paid sick leave</li>
-                    <li>Minimum of 2 weeks vacation</li>
-                    <li>Eleven paid holidays per year</li>
+                    <li>Paid BCBS medical insurance</li>
+                    <li>Immediate vesting in a 401(k) with historical company</li>
+                    <li>Paid Long-term & Short-term disability and Life Insurance</li>
+                    <li>Paid holidays</li>
+                    <li>Minimum of three weeks of paid time off</li>
                   </ul>
                 </div>
               </div>
@@ -107,18 +106,17 @@ get_header(); ?>
             <div class="et_pb_column et_pb_column_1_2">
               <div class="et_pb_module benefits">
                 <ul>
-                  <li>Paid dental, life, and long-term disability insurance</li>
-                  <li>Competitive BCBS health benefits available</li>
-                  <li>Immediate vesting in a 401(k) plan with historical company contributions of 20% of employee salary</li>
+                  <li>Paid BCBS medical insurance</li>
+                  <li>Immediate vesting in a 401(k) with historical company</li>
+                  <li>Paid Long-term & Short-term disability and Life Insurance</li>
                 </ul>
               </div>
             </div>
             <div class="et_pb_column et_pb_column_1_2">
               <div class="et_pb_module benefits">
                 <ul>
-                  <li>2 weeks paid sick leave</li>
-                  <li>Minimum of 2 weeks vacation</li>
-                  <li>Eleven paid holidays per year</li>
+                  <li>Paid holidays</li>
+                  <li>Minimum of three weeks of paid time off</li>
                 </ul>
               </div>
             </div>
